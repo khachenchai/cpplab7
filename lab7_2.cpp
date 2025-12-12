@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    string name, studentID;
+    string name, studentID, message;
     int gear;
     cout << "Fahsai: Sawadee ka...Can you tell me your name?\n";
     cout << "?????: ";
@@ -25,11 +25,10 @@ int main() {
     cout << name << ": ";
     getline(cin, day);
     cout << "Fahsai: " << day << "....that is OK!!! I'm looking forward to watching " << movie << " with you.\n";
-    if (name == "Luke Skywalker") {
-        cout << name << ": " << "May the Force be with you krub\n";
-    } else if (name == "Prayuth-chan") {
-        cout << name << ": " << "We will do as we promised, it'll take not too long...\n";
-    }
+    cout << name << ": ";
+    getline(cin, message);
+    
+
 
     cout << "Fahsai: 555+ see you " << day << ". Bye Bye \\(^ ^)/";
     return 0;
